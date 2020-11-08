@@ -1,0 +1,47 @@
+:root {
+    --color-bg: #DDDDDD;
+    --color-text: #EE6352;
+    --img-filter: brightness(.8) contrast(1.2);
+    --text-theme: 'claro';
+}
+
+body.dark-theme {
+    --color-bg: rgb(53,53,53);
+    --color-text: wheat;
+    --img-filter: brightness(1) contrast(1);
+    --text-theme: 'oscuro';
+}
+
+body.light-theme {
+    --color-bg: #DDDDDD;
+    --color-text: #EE6352;
+    --img-filter: brightness(.8) contrast(1.2);
+    --text-theme: 'claro';
+}
+
+body.red-theme {
+    --color-bg: #EE6352;
+    --color-text: #DDDDDD;
+    --img-filter: brightness(.8) contrast(1.2);
+    --text-theme: 'rojo';
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+h1 {
+    color: var(--color-text);
+}
+
+h1::after {
+    content: var(--text-theme);
+}
+
+label {
+    color: var(--color-text);
+}
+
+img {
+    filter: var(--img-filter);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkMode</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="light-theme">
+    <h1>Mi tema </h1>
+    <button id="boton" onclick="toogleThemeDarkLight()">Cambiar</button>
+    <div>
+        <img src="https://picsum.photos/200" alt="">
+    </div>
+    <input type="radio" onclick="changeTheme(this)" id="light" name="theme" value="light-theme">
+    <label for="light">Light</label><br>
+    <input type="radio" onclick="changeTheme(this)" id="dark" name="theme" value="dark-theme">
+    <label for="dark">Dark</label><br>
+    <input type="radio" onclick="changeTheme(this)" id="red" name="theme" value="red-theme">
+    <label for="red">Red</label>
+    <script src="app.js"></script>
+</body>
+
+</html>
